@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import "../static/asserts/antd-mobile.min.css"; // todo 暂时没有想到好的方法，在.babelrc里配置没有生效
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +12,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover"></meta>
-     
           {/* <!-- antd 插件 高清解决方案 --> */}
           <script type="text/javascript" src="/static/asserts/antd-hd.js"></script>
         </Head>

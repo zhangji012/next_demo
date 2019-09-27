@@ -1,4 +1,17 @@
 {
-  "presets": ["next/babel","@zeit/next-typescript/babel"],
-
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    ["import", {
+      "libraryName": "antd-mobile",
+      "style": "css"
+    }],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "decoratorsBeforeExport": true,
+      }
+    ]
+   
+  ]
 }
