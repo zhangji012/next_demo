@@ -1,0 +1,32 @@
+@import "../../static/asserts/antd-custom.less";
+.tab-bottom-box{
+  background-color: @tab-bar-bg-color;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 0.05rem #48484830;
+  bottom: 0;
+  .bottom-href{
+    padding: 6px 30px 0 30px;
+    line-height: normal;
+    height: auto;
+    border-width: 0;
+    border-radius: 0;
+    &::before{
+      border-width: 0 !important;
+    }
+    img{
+      width: 30px;
+    }
+    p{
+      font-size: @font-size-icontext;
+      text-align: center;
+      color: @tab-bar-color;
+      margin: 4px 0 5px 0;
+    }
+    p.active{
+      color: @tab-bar-active-color
+    }
+  }
+}
+
