@@ -8,7 +8,7 @@ const next = require('next')
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-
+// todo cankaoServer.js没有任何用，但是可以参考里面的renderAndCache，缓存页面
 app.prepare().then(() => {
   createServer((req, res) => {
     // Be sure to pass `true` as the second argument to `url.parse`.
