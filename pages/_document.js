@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import "../static/asserts/antd-mobile.min.css"; // todo 暂时没有想到好的方法，在.babelrc里配置没有生效
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
